@@ -1,0 +1,35 @@
+package basics;
+
+import java.util.Scanner;
+
+public class ArrayQuestions {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the number of elements");
+		int n = sc.nextInt();
+		int[] a = new int[n];
+		readArray(a, sc);
+		printSumAvg(a);
+		
+		
+	}
+	private static void printSumAvg(int[] a) {
+		int s = 0;
+		double avg;
+		for(int i = 0; i<a.length; i++)
+		{
+			s = + a[i];
+		}
+		avg = s/a.length;
+		System.out.println("sum = " + s + ",avg=" + avg);
+		
+	}
+	public static void readArray(int a[], Scanner sc)
+	{
+		for(int i = 0; i<n; i++)
+		{
+			a[i] =sc.nextInt();
+		}
+	}
+
+}

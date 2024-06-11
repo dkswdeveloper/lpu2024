@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Hello,org.eclipse.launchbar.core.descriptorType.default\:GarbageCollectionDemo,org.eclipse.launchbar.core.descriptorType.default\:StaticDemo,org.eclipse.launchbar.core.descriptorType.default\:ArrayQuestions,org.eclipse.launchbar.core.descriptorType.default\:RuntimePolyFigure,org.eclipse.launchbar.core.descriptorType.default\:InterfaceDemo,org.eclipse.launchbar.core.descriptorType.default\:ComparableComparatorDemo
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:ArrayQuestions/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ArrayQuestions/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Hello/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Hello/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

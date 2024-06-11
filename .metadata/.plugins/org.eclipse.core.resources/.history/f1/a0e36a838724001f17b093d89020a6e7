@@ -1,0 +1,9 @@
+package basics;
+
+public class GarbageCollectionDemo {
+//	main control space
+	public static void main(String[] args) {
+		
+	}
+
+}

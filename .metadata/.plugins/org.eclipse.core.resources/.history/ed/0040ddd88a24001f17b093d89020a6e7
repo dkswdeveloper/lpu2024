@@ -1,0 +1,12 @@
+package basics;
+
+public class ThisDemo {
+	public static void main(String[] args) {
+		Student s1 =new Student("Dinesh", 23, "CSE");
+		Student s2 =new Student("Piyush", 24, "IT");
+		s1.show();
+		s2.show();
+		
+	}
+
+}

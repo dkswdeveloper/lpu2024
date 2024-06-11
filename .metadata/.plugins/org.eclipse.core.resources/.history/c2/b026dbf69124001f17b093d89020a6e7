@@ -1,0 +1,12 @@
+package basics;
+
+public class StaticDemo {
+	public static void main(String[] args) {
+		Student s1 = new Student("Akash", 10, "CSE");
+		Student s2 = new Student("Prithvi", 10, "CSE");
+		System.out.println(s1);
+		System.out.println(s2);
+		
+	}
+
+}

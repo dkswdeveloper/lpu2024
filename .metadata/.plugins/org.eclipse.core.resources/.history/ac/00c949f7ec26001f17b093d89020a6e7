@@ -1,0 +1,9 @@
+package inh;
+
+public class Student extends Person {
+	private int roll;
+	private String branch;
+	
+	
+
+}

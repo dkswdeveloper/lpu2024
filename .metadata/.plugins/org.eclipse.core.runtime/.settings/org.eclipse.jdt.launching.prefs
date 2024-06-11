@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1717649950092">\r\n    <vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n        <vm id\="1717649886055" name\="jdk-11.0.12" path\="C\:\\Program Files\\Java\\jdk-11.0.12"/>\r\n        <vm id\="1717649950092" name\="jdk1.8.0_301" path\="C\:\\Program Files\\Java\\jdk1.8.0_301"/>\r\n    </vmType>\r\n</vmSettings>\r\n

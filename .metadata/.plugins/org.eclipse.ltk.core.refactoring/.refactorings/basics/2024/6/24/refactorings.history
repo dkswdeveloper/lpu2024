@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;intf.RectangularPicture&apos; to &apos;CircularPicture&apos;&#x0D;&#x0A;- Original project: &apos;basics&apos;&#x0D;&#x0A;- Original element: &apos;intf.RectangularPicture&apos;&#x0D;&#x0A;- Renamed element: &apos;intf.CircularPicture&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RectangularPicture&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;intf{InterfaceDemo.java[RectangularPicture!2" matchStrategy="1" name="CircularPicture" qualified="false" references="true" similarDeclarations="false" stamp="1718083141803" textual="false" version="1.0"/>
+</session>

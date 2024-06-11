@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;student&apos; in &apos;basics.GarbageCollectionDemo.main(...)&apos; to &apos;student2&apos;&#x0D;&#x0A;- Original project: &apos;basics&apos;&#x0D;&#x0A;- Original element: &apos;basics.GarbageCollectionDemo.main(String[]).student&apos;&#x0D;&#x0A;- Renamed element: &apos;student&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;student&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;basics{GarbageCollectionDemo.java[GarbageCollectionDemo~main~\[QString;@student!239!270!247!253!QStudent;!0!false" name="student2" references="true" stamp="1717734977478" version="1.0"/>
+</session>
