@@ -2,4 +2,6 @@
 bin/
 *.jar
 *.zip
+.metadata/
+
 
