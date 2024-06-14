@@ -8,6 +8,7 @@ public class Student {
 	private String name; 
 	private String branch;
 	private String password;
+	public int numBooks = 0;
 	private List<Issue> issues = new ArrayList<>(); //contorl+shift+ O
 	public Student(int roll, String name, String branch, String password) {
 		super();
