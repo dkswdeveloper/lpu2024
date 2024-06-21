@@ -7,6 +7,14 @@ public class Issue {
 	private int bid;
 	private int sid;
 	private LocalDate isDate, expRetDate, actRetDate;
+	private int fine  = 0;
+	
+	public int getFine() {
+		return fine;
+	}
+	public void setFine(int fine) {
+		this.fine = fine;
+	}
 	public Issue(int bid, int sid) {
 		super();
 		this.bid = bid;

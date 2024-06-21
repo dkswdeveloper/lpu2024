@@ -1,6 +1,0 @@
-package inh;
-
-public class OpenBox extends Box {
-	
-
-}
