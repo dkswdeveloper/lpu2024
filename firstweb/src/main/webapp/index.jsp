@@ -17,7 +17,8 @@
 </form>
 <hr/>
 <form action="books" method="get" >
-	
+	Enter the bookid <input type="text" name="bid" />
+	<input type="submit" value="Submit" />
 </form>
 
 
