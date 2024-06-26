@@ -40,4 +40,10 @@ public class BookServiceImpl implements BookService{
 		return bookDao.findAll();
 	}
 
+	@Override
+	public List<Book> find(int start, int number) {
+		List<Book> books = bookDao.find(start,number);
+		return books;
+	}
+
 }

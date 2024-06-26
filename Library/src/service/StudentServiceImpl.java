@@ -21,7 +21,7 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public Student find(int roll, String password) {
+	public Student login(int roll, String password) {
 		return studentDao.find(roll,password);
 	}
 

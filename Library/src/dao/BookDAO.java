@@ -10,6 +10,7 @@ public interface BookDAO {
 	Book update(int bid, Book book);
 	List<Book> findByAuthor(String author);
 	Book find(int bid);
+	List<Book> find(int start, int number);
 	boolean remove(int bid);
 	List<Book> findAll();
 	
