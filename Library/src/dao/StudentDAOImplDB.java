@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import model.Book;
 import model.Student;
 
 public class StudentDAOImplDB implements StudentDAO
@@ -77,34 +78,37 @@ public class StudentDAOImplDB implements StudentDAO
 
 	@Override
 	public List<Student> findAll() {
-		try
-		{
-			Connection connection = DbConnection.getConnection();
-			String sql  = "select * from student";
-			PreparedStatement pst = connection.prepareStatement(sql);
-			List<Student> list = new ArrayList<>();
-			pst.executeQuery();
-			ResultSet resultSet = pst.getResultSet();
-			while(resultSet.next())
-			{
-				//get student from resultSet and return
-				int rollInt = resultSet.getInt(1); //roll is 1st column
-				String name = resultSet.getString("name");
-				String branch = resultSet.getString("branch");
-				int numBooks = resultSet.getInt("numbooks");
-				String passwordDb = resultSet.getString("password");
-				String email = resultSet.getString("email");
-				Date dob = resultSet.getDate("dob");
-				Student s = new Student(rollInt, name, branch, passwordDb, dob, email);
-				list.add(s);
-			}
-			return list;
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			return null;
-		}
+//		try
+//		{
+//			Connection connection = DbConnection.getConnection();
+//			String sql  = "select * from student";
+//			PreparedStatement pst = connection.prepareStatement(sql);
+//			List<Student> list = new ArrayList<>();
+//			pst.executeQuery();
+//			ResultSet resultSet = pst.getResultSet();
+//			while(resultSet.next())
+//			{
+//				//get student from resultSet and return
+//				int bid = resultSet.getInt("bid");
+//				int bookTypeid = resultSet.getInt("booktypeid");
+//				String title = resultSet.getString("title");
+//				String author= resultSet.getString("author");
+//				String publisher= resultSet.getString("publisher");
+//				int isid = = resultSet.getInt("isid");
+//				Book b  = new Book(bid, title, author, publisher);
+//				b.setBookTypeid(bookTypeid);
+//				b.setIsid(isid);
+//				
+//				list.add(b);
+//			}
+//			return list;
+//		}
+//		catch(Exception e)
+//		{
+//			e.printStackTrace();
+//			return null;
+//		}
+		return null;
 	}
 
 }
