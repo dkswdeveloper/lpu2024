@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select City</title>
+</head>
+<body>
+    <form action="#">
+        </select>
+        State <select name="state" id="state" onchange="populateStates()">
+        </select>
+        City <select name="city" id="city">
+        </select>
+    </form>
+    <script>
+          var data2 = {
+            "--Select State--" : [],
+             haryana : ["amabala", "panchkula", "gurugram"],
+             punjab : ["amritsar", "jalandhar","patiala"],
+             UP : ["kanpur", "lakhnow", "varansi", "ayodhya","kashi"]
+            }
+        function populateSelect(id, values)
+        {
+            var el = document.getElementById(id);
+            var str = "";
+            for(v of values)
+            {
+                str += "<option>" + v + "</option>";
+            }
+            el.innerHTML = str;
+        }
+        populateSelect("state", Object.keys(data2));
+        populateSelect("city", data2[""]);
+        function populateStates()
+        {
+            var el = document.getElementById("state");
+            let index = el.selectedIndex;
+            let keys = Object.keys(data2);
+            populateSelect("city", data2[keys[index]]);
+        }
+        // var data = {
+        //     india : { haryana : ["amabala", "panchkula", "gurugram"],
+        //                 punjab : ["amritsar", "jalandhar","patiala"],
+        //             UP : ["kanpur", "lakhnow", "varansi", "ayodhya","kashi"]},
+        //     usa : [ ]
+        // }
+
+    </script>
+</body>
+</html>

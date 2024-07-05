@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+</head>
+<body>
+    Choose Bowling / Batting
+    <button id = "toss" onclick="chooseBowling()">Bowling</button>
+    <button id="toss" onclick="chooseBatting()">Batting</button>
+    Entter number <input type="number" name="num" id="num" min="0" max="6" 
+    onchange="shotHit()">
+    Total Score of User <span id="totalscoreUser">0</span>
+    Total Score of Computer <span id="totalscoreComputer">0</span>
+    Computer Number : <span id="compnum">0</span>
+    
+    <p id="sum" onclick="printHello2()"></p>
+    <p id="timer"></p>
+    <button onclick="startGame()">start the game</button>
+    <script>
+        var count = 10;
+        function startGame()
+        {
+            document.getElementById("timer").innerHTML = count;
+        var mytimer = setInterval(() => { 
+            document.getElementById("timer").innerHTML = count;
+            if(count == 0) {clearInterval(mytimer); count = 10; }
+            count--
+        }, 1000);
+    }
+        function printHello2()
+        {
+            console.log("hello");
+            setTimeout(function() {console.log("hello after 5");},5000);
+            setInterval(()=> {console.log(new Date())}, 2000);
+        }
+        const fact = (n) => {
+            let p = 1;
+            for(let i = 1; i<= n; i++) p = p * i;
+            return p;
+        }
+        let f = fact(5);
+        console.log("fact" + f);
+        function printToConsole(x)
+        { console.log(x); }
+        function printToPara(x)
+        {
+            document.getElementById("sum").innerHTML = "" + x;
+        }
+        function actOnSum(a, b, fun)
+        {
+            let s = a + b;
+            fun(s);
+        }
+        actOnSum(10,20, printToConsole);
+        actOnSum(10,20, printToPara);
+
+        function nextRandom(limit)
+        { //generates a random number from 0 to limit - 1
+            var rand = Math.random();
+            rand = Math.floor(rand * limit);
+            return rand;
+        }
+        function printArray(ar)
+        {
+            for(let x of ar)
+                console.log(x);
+        }
+        
+
+
+    </script>
+</body>
+</html>

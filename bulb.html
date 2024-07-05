@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> javascript to change attributes </h2>
+    <img id="bulb" src="offbulb.jpg" alt="Bulb OFF">
+    <br>
+    <button onclick="toggleBulbState(this)">ON</button>
+    <script>
+        var bulbState = "OFF";
+        function toggleBulbState(btn) {
+            let el = document.getElementById("bulb");
+            if(bulbState == "OFF" )
+            {
+                bulbState = "ON";
+                el.src = "onbulb.jpg";
+                // var btnEl = event.target;
+                // btnEl.innerHTML = "OFF";
+                btn.innerHTML = "OFF";
+            }
+            else
+            {
+                bulbState = "OFF";
+                el.src = "offbulb.jpg";
+                btn.innerHTML = "ON";
+            }
+        }
+        
+    </script>
+</body>
+</html>
