@@ -17,6 +17,7 @@ public class Main {
 			emf = Persistence.createEntityManagerFactory("libPU");
 			em = emf.createEntityManager();
 			Book book = em.find(Book.class,101);
+			
 			System.out.println(book);
 		}
 		catch(Exception e)
