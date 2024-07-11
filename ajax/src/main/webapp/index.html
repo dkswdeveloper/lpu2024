@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> Main Page</h1>
+<button onclick="getData()" >Get Data </button>
+<div id="data">Data</div>
+<script>
+	function getData(){
+	fetch("employees/101")
+	.then(response => response.json())
+	.then(json =>{
+		console.log(json);
+		document.getElementById("data").innerHTML = JSON.stringify(json);
+	})
+	}
+</script>
+</body>
+</html>

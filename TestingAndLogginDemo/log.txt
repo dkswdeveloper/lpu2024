@@ -1,0 +1,31 @@
+2024-07-11 14:58:33,171[yyyy-mm-dd HH-MM-SS] DEBUG  Fun method with args 4
+2024-07-11 14:58:33,171[yyyy-mm-dd HH-MM-SS] WARN   library could not be loaded
+2024-07-11 14:58:33,174[yyyy-mm-dd HH-MM-SS] TRACE  value of i = 1
+2024-07-11 14:58:33,174[yyyy-mm-dd HH-MM-SS] TRACE  value of i = 2
+2024-07-11 14:58:33,174[yyyy-mm-dd HH-MM-SS] TRACE  value of i = 3
+2024-07-11 14:58:33,174[yyyy-mm-dd HH-MM-SS] TRACE  value of i = 4
+2024-07-11 14:58:33,174[yyyy-mm-dd HH-MM-SS] INFO   Calcuations completed
+2024-07-11 14:58:33,175[yyyy-mm-dd HH-MM-SS] TRACE  the value of list items is this
+2024-07-11 14:58:33,175[yyyy-mm-dd HH-MM-SS] DEBUG  the method was called with the following arguments
+2024-07-11 14:58:33,175[yyyy-mm-dd HH-MM-SS] INFO   the library was installed or message from the server was not received
+2024-07-11 14:58:33,175[yyyy-mm-dd HH-MM-SS] WARN   the library to convert xml was not found using default lib
+2024-07-11 14:58:33,175[yyyy-mm-dd HH-MM-SS] ERROR  the exception with values occured
+2024-07-11 14:58:33,175[yyyy-mm-dd HH-MM-SS] FATAL  Sorry please restart the software/system
+2024-07-11 14:59:55,528[yyyy-mm-dd HH-MM-SS] TRACE  the value of list items is this
+2024-07-11 14:59:55,529[yyyy-mm-dd HH-MM-SS] DEBUG  the method was called with the following arguments
+2024-07-11 14:59:55,529[yyyy-mm-dd HH-MM-SS] INFO   the library was installed or message from the server was not received
+2024-07-11 14:59:55,532[yyyy-mm-dd HH-MM-SS] WARN   the library to convert xml was not found using default lib
+2024-07-11 14:59:55,532[yyyy-mm-dd HH-MM-SS] ERROR  the exception with values occured
+2024-07-11 14:59:55,532[yyyy-mm-dd HH-MM-SS] FATAL  Sorry please restart the software/system
+2024-07-11 15:02:01,384[yyyy-mm-dd HH-MM-SS] TRACE  the value of list items is this
+2024-07-11 15:02:01,384[yyyy-mm-dd HH-MM-SS] DEBUG  the method was called with the following arguments
+2024-07-11 15:02:01,384[yyyy-mm-dd HH-MM-SS] INFO   the library was installed or message from the server was not received
+2024-07-11 15:02:01,384[yyyy-mm-dd HH-MM-SS] WARN   the library to convert xml was not found using default lib
+2024-07-11 15:02:01,384[yyyy-mm-dd HH-MM-SS] ERROR  the exception with values occured
+2024-07-11 15:02:01,386[yyyy-mm-dd HH-MM-SS] FATAL  Sorry please restart the software/system
+2024-07-11 15:02:22,787[yyyy-mm-dd HH-MM-SS] TRACE  the value of list items is this
+2024-07-11 15:02:22,790[yyyy-mm-dd HH-MM-SS] DEBUG  the method was called with the following arguments
+2024-07-11 15:02:22,790[yyyy-mm-dd HH-MM-SS] INFO   the library was installed or message from the server was not received
+2024-07-11 15:02:22,790[yyyy-mm-dd HH-MM-SS] WARN   the library to convert xml was not found using default lib
+2024-07-11 15:02:22,790[yyyy-mm-dd HH-MM-SS] ERROR  the exception with values occured
+2024-07-11 15:02:22,790[yyyy-mm-dd HH-MM-SS] FATAL  Sorry please restart the software/system
