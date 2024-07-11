@@ -13,7 +13,7 @@ public class Student {
 	private String name; 
 	private String branch;
 	private String password;
-	public int numBooks = 0;
+	private int numBooks = 0;
 	private Date dob;
 	private String email ;
 	
