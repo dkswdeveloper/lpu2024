@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> Library Using Spring Boot</h1>
+<button onclick="showBooks()">Show Books</button>
+<ol id="books">
+	
+</ol>
+<script>
+	function showBooks()
+	{
+		fetch("/books").then(res => res.json())
+		.then(books => {
+				let listEl = document.getElementById("books");
+				let str = ""
+			for(let book of books)
+			{
+				str += "<li>" + JSON.stringify(book) + "</li>"
+			}
+				
+			listEl.innerHTML = str;
+		})
+	}
+</script>
+</body>
+</html>

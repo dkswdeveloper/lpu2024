@@ -2646,3 +2646,181 @@ java.net.UnknownHostException: platform.yatta.de
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 14:56:42.165
 !MESSAGE executing callback sts4.classpath.RWodqGZI SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:32:11.727
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RWodqGZI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:32:11.728
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.RWodqGZI
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:32:11.728
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:32:11.729
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RWodqGZI => OK
+
+!ENTRY com.yattasolutions.platform.marketplace.client 4 0 2024-07-12 15:32:12.860
+!MESSAGE Problem retrieving marketplace UUID, an own UUID will be used.
+!STACK 0
+java.lang.RuntimeException: The plugin could not be started. Please restart Eclipse.
+	at com.yattasolutions.platform.marketplace.client.MarketplaceClientPlugin.getDefault(MarketplaceClientPlugin.java:245)
+	at com.yattasolutions.platform.marketplace.client.MarketplaceClient.get(MarketplaceClient.java:33)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient.getAccountUuid(LicensingClient.java:603)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient.access$3(LicensingClient.java:599)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient$1.run(LicensingClient.java:509)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.yattasolutions.platform.marketplace.client 4 0 2024-07-12 15:32:12.871
+!MESSAGE Problem retrieving marketplace UUID, an own UUID will be used.
+!STACK 0
+java.lang.RuntimeException: The plugin could not be started. Please restart Eclipse.
+	at com.yattasolutions.platform.marketplace.client.MarketplaceClientPlugin.getDefault(MarketplaceClientPlugin.java:245)
+	at com.yattasolutions.platform.marketplace.client.MarketplaceClient.get(MarketplaceClient.java:33)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient.getAccountUuid(LicensingClient.java:603)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient.access$3(LicensingClient.java:599)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient$1.run(LicensingClient.java:509)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.yattasolutions.platform.marketplace.client 4 0 2024-07-12 15:32:13.080
+!MESSAGE Problem retrieving marketplace UUID, an own UUID will be used.
+!STACK 0
+java.lang.RuntimeException: The plugin could not be started. Please restart Eclipse.
+	at com.yattasolutions.platform.marketplace.client.MarketplaceClientPlugin.getDefault(MarketplaceClientPlugin.java:245)
+	at com.yattasolutions.platform.marketplace.client.MarketplaceClient.get(MarketplaceClient.java:33)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient.getAccountUuid(LicensingClient.java:603)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient.access$3(LicensingClient.java:599)
+	at de.yatta.platform.marketplace.licensing.client.LicensingClient$1.run(LicensingClient.java:509)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-07-12 15:32:14.172
+!MESSAGE An internal error occurred during: "Check server availability".
+!STACK 0
+java.lang.RuntimeException: The plugin could not be started. Please restart Eclipse.
+	at com.yattasolutions.platform.marketplace.client.MarketplaceClientPlugin.getDefault(MarketplaceClientPlugin.java:245)
+	at com.yattasolutions.platform.marketplace.client.account.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-07-12 15:32:38.615 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=16.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\dinesh\Dinesh\javaprogs\LPU2024
+
+!ENTRY org.eclipse.jface 2 0 2024-07-12 15:33:21.341
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-12 15:33:21.341
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@71549247,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17d5138,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-12 15:33:21.341
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(PowershellEditor.Format,Format,
+		Format source,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@266b7d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(com.yattasolutions.xpandpp.formatTemplate,Format Template,
+		Formats an Xpand++ temaplate if manual format mode is enabled,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18f919ce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-12 15:33:21.341
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.editor,Open Declaration,
+		Open an editor on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4dea763c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.powershell.gotodefinition,Go To Definition,
+		Go to definition,
+		Category(org.eclipse.powershell.category.editor,Powershell editor,Powershell editor category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26f50a28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:32.882
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:32.883
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5abfff91[org.springframework.tooling.boot.ls:1.29.0.202110250907(id=970)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:32.888
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:32.938
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-12 15:33:34.905
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dinesh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.168
+!MESSAGE Boot LS startup time from start to initialized: 3267ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.371
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lsglLJCtisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.380
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.388
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.389
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.390
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.391
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lsglLJCt => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.408
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.413
+!MESSAGE buffering callback sts4.classpath.lsglLJCt libboot false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.415
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.421
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.424
+!MESSAGE buffering callback sts4.classpath.lsglLJCt libraryHib false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:36.425
+!MESSAGE executing callback sts4.classpath.lsglLJCt 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-12 15:33:37.027
+!MESSAGE executing callback sts4.classpath.lsglLJCt SUCCESS [done]
