@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bordered {
+            border : 2px solid red;
+        }
+        .top {
+            background-color: aqua;
+        }
+        .header {
+            background-color: burlywood;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .explanation {
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+
+<body class="bordered">
+    <h1>DOM</h1>
+    <button onclick="addDiv()" >Add</button>
+    <div class="firstdiv bordered">
+        <div id="top" class="top">
+            This is top div
+            <div class="header">Header Div</div>
+            <div class="explanation"> Inner div explanation</div>
+        </div>
+        <button onclick="duplicate()">Copy Div</button>
+    </div>
+
+    <script>
+        function duplicate()
+        {
+            let divEl = document.querySelector("div.firstdiv");
+            let copy = divEl.cloneNode(true);
+            document.querySelector("body").appendChild(copy);
+        }
+        function addDiv()
+        {
+            // let btn = event.target;
+            // btn.disabled = "true";
+            // var allBtns = document.getElementsByTagName("button");
+            // allBtns[0].disabled = true;
+            var divFirstEls = document.getElementsByClassName("firstdiv");
+            var btnEl = divFirstEls[0].previousElementSibling;
+            btnEl.disabled = true;
+
+            var topEl = document.getElementById("top");
+            //change innerHTML of this element
+            var newEl = document.createElement("div");
+            newEl.innerHTML = "This is footer";
+            topEl.appendChild(newEl);
+        }
+        var divEl = document.getElementById("top");
+        console.log(divEl);
+        console.log("number of children :" + divEl.childElementCount)
+        console.log("number of children :" + divEl.children.length)
+        console.log(divEl.firstChild);
+        console.log(divEl.firstElementChild);
+
+    </script>
+</body>
+
+</html>

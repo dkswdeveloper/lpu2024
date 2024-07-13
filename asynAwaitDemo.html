@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>See the console</h1>
+    <script>
 async function fun()
 {
     await fetch("http://www.google.com/");
@@ -59,9 +69,12 @@ function sum1(a,b)
     var prm = new Promise(function(resolve, reject) {
         try{
         //do the processing that takes time
-        let c = a + b;
+        setTimeout(()=> {
+            let c = a + b;
         // when processing is done, call resolve(result)
         resolve(c);
+        }, 3000);
+        
         }
         catch(err)
         {
@@ -70,7 +83,6 @@ function sum1(a,b)
         }
     });
     return prm;
-
 }
 async function testSum()
 {
@@ -87,8 +99,15 @@ async function testSum()
     let res = await sum1(3,4);
     console.log(res);
     let prm1 = sum1(3,4);
-    prm.then( out => console.log(out) );
+    console.log(prm1);
     res = await sum1(4, 3);
     console.log(res);
+
+
+
 }
 testSum();
+
+    </script>
+</body>
+</html>

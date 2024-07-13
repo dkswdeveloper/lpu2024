@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="hidden" name="bid" id="bid" value="0"><br>
+    Title : <input type="text" name="title" id="title">
+    <br>Author : <input type="text" name="author" id="author">
+    <br>publisher : <input type="text" name="publisher" id="publisher">
+    <br><input type="hidden" name="bookTypeId" value="1">
+    <br><input type="hidden" name="isid" id="isid" value="0">
+    <br><button onclick="saveData()">Save Book</button>
+    <script>
+        function saveData(){
+        let obj = {
+    "bid": 0,
+    "bookTypeid": 1,
+    "title": "C Programming with DSA",
+    "author": "Tanenbaum",
+    "publisher": "Tata MCGrawHill",
+    "isid": 0
+};
+        fetch("http://localhost:8081/books",
+            {
+                method: "post",
+                body: JSON.stringify(obj),
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept' : 'application/json'
+                }
+            }).then(res => res.json())
+            .then(res => {
+                console.log('res :>> ', res);
+                document.write(JSON.stringify(res))
+            }) 
+        }
+    </script>
+</body>
+
+</html>
