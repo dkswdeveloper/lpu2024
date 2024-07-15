@@ -17,7 +17,10 @@ public class BookServiceImpl implements BookService{
 //	entityManager.getTransaction().begin();
 //	entityManager.getTransaction().commit();
 	@Autowired
-	BookRepository bookRepository;
+	BookRepository bookRepository; 
+	//spring data jpa will create an object
+	//that allows us to map book table with book entity class and uses
+	// jpa (hibernate) for mapping
 	
 	@Override
 	@Transactional
