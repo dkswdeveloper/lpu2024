@@ -3,6 +3,8 @@ package com.lpu.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Book {
@@ -13,18 +15,15 @@ public class Book {
 	private String title;
 	private String author;
 	private String publisher;
-	private int isid = 0;
 	
+	@OneToOne
+	@JoinColumn(name="isid")
+	Issue issue;
 	
 	public Book() {
 		super();
 	}
-	public int getIsid() {
-		return isid;
-	}
-	public void setIsid(int isid) {
-		this.isid = isid;
-	}
+	
 	public Book(int bid, String title, String author, String publisher) {
 		super();
 		this.bid = bid;
@@ -67,6 +66,15 @@ public class Book {
 		return "Book [bid=" + bid + ", bookTypeid=" + bookTypeid + ", title=" + title + ", author=" + author
 				+ ", publisher=" + publisher + "]";
 	}
+
+	public Issue getIssue() {
+		return issue;
+	}
+
+	public void setIssue(Issue issue) {
+		this.issue = issue;
+	}
+	
 	
 
 }

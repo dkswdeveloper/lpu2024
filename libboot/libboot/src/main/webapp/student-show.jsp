@@ -10,6 +10,7 @@
 <h3>View Student</h3>
 <p> this is called expression language $ dollor {  student } 
 request.getAttribute("student") }</p>
-${student }
+${student } <br>
+${activeIssues } <br>
 </body>
 </html>

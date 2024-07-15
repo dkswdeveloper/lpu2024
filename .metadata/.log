@@ -5571,3 +5571,84 @@ org.apache.http.NoHttpResponseException: platform.yatta.de:443 failed to respond
 
 !ENTRY org.eclipse.ui 2 2 2024-07-15 11:45:50.853
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:04.913
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hwoyqygZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:04.913
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.hwoyqygZ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:04.914
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:04.914
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hwoyqygZ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:14.759
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:14.760
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@320b0e32[org.springframework.tooling.boot.ls:1.29.0.202110250907(id=970)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:14.760
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:21.943
+!MESSAGE Boot LS startup time from start to initialized: 7182ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.064
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lzRPrByGisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.064
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.064
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.065
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.065
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.065
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lzRPrByG => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.070
+!MESSAGE classpath=41 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.071
+!MESSAGE buffering callback sts4.classpath.lzRPrByG libHib2 false 41
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.071
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.084
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.087
+!MESSAGE buffering callback sts4.classpath.lzRPrByG libboot false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.088
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.089
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.090
+!MESSAGE buffering callback sts4.classpath.lzRPrByG Library false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.090
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.092
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.094
+!MESSAGE buffering callback sts4.classpath.lzRPrByG libraryHib false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.094
+!MESSAGE executing callback sts4.classpath.lzRPrByG 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-15 14:22:22.478
+!MESSAGE executing callback sts4.classpath.lzRPrByG SUCCESS [done]
