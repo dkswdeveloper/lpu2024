@@ -52,8 +52,18 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
+	@Transactional
 	public boolean remove(int bid) {
-		return false;
+		try
+		{
+		bookRepository.deleteById(bid);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+		}
+		return true;
 	}
 
 	@Override

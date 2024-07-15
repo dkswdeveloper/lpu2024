@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -45,6 +46,12 @@ public class BookContorller {
 		Book bk = bookService.save(book);
 		System.out.println("book saved :" + bk);
 		return bk;
+	}
+	@DeleteMapping(value="/books/{bid}")
+	public String removeBook(@PathVariable("bid") int bid)
+	{
+		boolean status = bookService.remove(bid);
+		return "Deleted " + bid + ":" + status;
 	}
 	
 
