@@ -9,7 +9,7 @@ public interface BookService {
 	Book update(int bid, Book book);
 	List<Book> findByAuthor(String author);
 	List<Book> find(int start, int number);
-	Book find(int bid);
+	Book find(int bid) throws BookNotFoundExcpetion;
 	boolean remove(int bid);
 	List<Book> findAll();
 	Book save(Book book);

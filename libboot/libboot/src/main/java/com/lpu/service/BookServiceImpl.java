@@ -46,7 +46,7 @@ public class BookServiceImpl implements BookService{
 			ex.setTitle(book.getTitle());
 			return ex;
 		}
-		throw new RuntimeException("NO book found with id " + bid);
+		throw new RuntimeException("NO book found with id to update" + bid);
 	}
 
 	@Override
@@ -60,10 +60,11 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public Book find(int bid) {
+	public Book find(int bid) throws BookNotFoundExcpetion 
+	{
 		Optional<Book> opt = bookRepository.findById(bid);
 		if(opt.isPresent()) return opt.get();
-		else return null;
+		else throw new BookNotFoundExcpetion(bid);
 	}
 
 	@Override
