@@ -27,14 +27,26 @@ public class BookServiceImpl implements BookService{
 	public Book add(String title, String author, String publisher) {
 		// spring will start transaciton
 		Book b = new Book(0, title, author, publisher);
-		bookRepository.save(b);
+		b = bookRepository.save(b);
 		// spring will commit transaction 
 		return b;
 	}
 
 	@Override
+	@Transactional //automatically save all the data in persistent object
 	public Book update(int bid, Book book) {
-		return null;
+		Optional<Book> optExistingBook = bookRepository.findById(bid);
+		if(optExistingBook.isPresent())
+		{
+			Book ex = optExistingBook.get();
+			ex.setAuthor(book.getAuthor());
+			ex.setBookTypeid(book.getBookTypeid());
+			ex.setIssue(book.getIssue());
+			ex.setPublisher(book.getPublisher());
+			ex.setTitle(book.getTitle());
+			return ex;
+		}
+		throw new RuntimeException("NO book found with id " + bid);
 	}
 
 	@Override
@@ -75,8 +87,9 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
+	@Transactional
 	public Book save(Book book) {
-		return this.add(book.getTitle(),book.getAuthor(),book.getPublisher());
+		return bookRepository.save(book);
 	}
 
 }

@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Issue {
 	@Id
@@ -18,6 +20,7 @@ public class Issue {
 	
 	@OneToOne //assumption book_bid
 	@JoinColumn(name="bid")
+	@JsonIgnore //do not convert this to json 
 	Book book;
 	
 //	private int bid;
@@ -97,3 +100,13 @@ public class Issue {
 	}
 	
 }
+/*
+ * Create a class Issue 
+ * add onetoone mapping for book and student
+ * add onetoone mapping in book class
+ * create IssueRepository inteface
+ * add custom query to it
+ * create IssueReturnService interface
+ * Implement it using all the repositories required  
+ * call it from student controller
+*/
