@@ -30,9 +30,23 @@ public class BookContorller {
 	// 3. Constructor
 	// Object created by Spring is called bean 
 	
-	@Autowired
-	BookService bookService;
+//	@Autowired
+	BookService bookService; //Autowiring on property
 	
+	public BookService getBookService() {
+		return bookService;
+	}
+	//Autowiring on setter
+	@Autowired
+	public void setBookService(BookService bookService) {
+		this.bookService = bookService;
+	}
+	//Autowiring on constructor
+//	@Autowired
+	public BookContorller(BookService bookService) {
+		super();
+		this.bookService = bookService;
+	}
 	@GetMapping(value = "/books", produces = "application/json")
 	public List<Book> getBooks()
 	{
@@ -74,7 +88,6 @@ public class BookContorller {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST)
 					.body("Some Error : " + message);
 		}
-		
 	}
 	@ExceptionHandler
 	public ResponseEntity sendErrorMessage(BookNotFoundExcpetion e)

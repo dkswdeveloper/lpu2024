@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lpu.model.Book;
+import com.lpu.service.BookNotFoundExcpetion;
 import com.lpu.service.BookService;
 
 // @RestController // this will send data only in the resonse, 
@@ -17,7 +18,7 @@ public class BookControllerMVC {
 	@Autowired
 	BookService bookService;
 	@GetMapping(value = "/mvc/books")
-	public String getBook(@RequestParam("bid") int bid, ModelMap model)
+	public String getBook(@RequestParam("bid") int bid, ModelMap model) throws BookNotFoundExcpetion
 	{	//get a model from service and pass it on to the view (jsp)
 		Book book = bookService.find(bid);
 		//how to give it to jsp
